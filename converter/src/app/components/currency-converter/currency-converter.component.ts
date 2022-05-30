@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-currency-converter',
@@ -10,6 +10,7 @@ export class CurrencyConverterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
