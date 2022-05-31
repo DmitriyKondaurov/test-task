@@ -1,12 +1,16 @@
 <form class="form">
-    <input [(ngModel)]="exchangeTo.amount" class="form__input" type="number" name="currencyAmount" required>
-    <select [(ngModel)]="exchangeTo.currency" class="form__select" name="exchangeToCurrency">
+    <input [(ngModel)]="exchangeTo.rate" class="form__input" type="number" name="exchangeToAmount" required
+           (ngModelChange)="calcTo(exchangeFrom.r030, exchangeTo.r030)">
+    <select [(ngModel)]="exchangeTo.r030" class="form__select" name="exchangeToCurrency"
+            (ngModelChange)="calcTo(exchangeFrom.r030, exchangeTo.r030)">
       <option value=980>UAH</option>
       <option value=978>EUR</option>
       <option value=840>USD</option>
     </select>
-  <input [(ngModel)]="exchangeFrom.amount" class="form__input" type="number" name="currencyAmount" required>
-  <select [(ngModel)]="exchangeFrom.currency" class="form__select" name="exchangeFromCurrency">
+  <input [(ngModel)]="exchangeFrom.rate" class="form__input" type="number" name="exchangeFromAmount" required
+         (ngModelChange)="calcFrom()">
+  <select [(ngModel)]="exchangeFrom.r030" class="form__select" name="exchangeFromCurrency"
+          (ngModelChange)="calcFrom()">
     <option value=980>UAH</option>
     <option value=978>EUR</option>
     <option value=840>USD</option>

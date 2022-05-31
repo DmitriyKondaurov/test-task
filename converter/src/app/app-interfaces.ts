@@ -6,7 +6,3 @@ export interface ICurrency {
     'exchangedate': string,
 }
 
-export interface ICurrencyItem {
-  'amount': number,
-  'currency': number,
-}
