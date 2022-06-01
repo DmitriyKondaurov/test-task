@@ -29,7 +29,7 @@ export class CurrencyConverterComponent implements OnInit {
   constructor(private readonly restApiService: RestApiService) { }
 
   ngOnInit(): void {
-    this.calcTo(978, 1, true);
+    this.calcTo(840, 980, true);
   }
 
   calcTo(currencyCodeFrom: number, currencyCodeTo: number, direction: boolean)  {
@@ -38,7 +38,7 @@ export class CurrencyConverterComponent implements OnInit {
       let currencyValueFrom = this.getCurrencyValue(currencyCodeTo, currencyList);
       direction ?
           this.exchangeFrom.rate = Math.round(this.exchangeTo.rate / currencyValueTo * currencyValueFrom * 100)/100
-        : this.exchangeTo.rate = Math.round(this.exchangeFrom.rate * currencyValueTo * currencyValueFrom * 100)/100
+        : this.exchangeTo.rate = Math.round(this.exchangeFrom.rate / currencyValueTo * currencyValueFrom * 100)/100
     })
   }
 
