@@ -13,9 +13,9 @@
     </div>
     <div class="form__item">
       <input [(ngModel)]="exchangeFrom.rate" class="form__input" type="number" name="exchangeFromAmount" required
-             (ngModelChange)="calcTo(exchangeTo.r030, exchangeFrom.r030,false)">
+             (ngModelChange)="calcTo(exchangeTo.r030, exchangeFrom.r030, false)">
       <select [(ngModel)]="exchangeFrom.r030" class="form__select" name="exchangeFromCurrency"
-              (ngModelChange)="calcTo(exchangeTo.r030, exchangeFrom.r030,false)">
+              (ngModelChange)="calcTo(exchangeTo.r030, exchangeFrom.r030, false)">
         <option value=980>UAH</option>
         <option value=978>EUR</option>
         <option value=840>USD</option>

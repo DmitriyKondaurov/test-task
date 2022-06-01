@@ -13,5 +13,12 @@
 }
 
 .form__input {
+  height: 20px;
+  box-sizing: border-box;
   max-width: 100px;
+}
+
+.form__select {
+  height: 20px;
+  box-sizing: border-box;
 }
