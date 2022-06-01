@@ -1,0 +1,14 @@
+.header {
+  background-color: beige;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.header__title {
+  text-align: center;
+}

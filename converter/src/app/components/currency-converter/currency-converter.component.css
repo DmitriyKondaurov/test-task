@@ -1,0 +1,17 @@
+.form {
+  padding: 10px;
+}
+
+.form__wrapper {
+  max-width: 360px;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  max-width: 100px;
+}
